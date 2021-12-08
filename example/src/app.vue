@@ -16,8 +16,8 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
-import Scroll from './scroll'
-import data from './data'
+import Scroll from './components/Scroll.vue'
+import data from './assets/data.js'
 
 const listData = reactive(data)
 

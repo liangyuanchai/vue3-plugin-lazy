@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import BScroll from '@better-scroll/core'
-import { onMounted, ref, defineProps, defineEmits } from 'vue'
+import { onMounted, ref } from 'vue'
 const props = defineProps({
   probeType: {
     type: Number,
@@ -18,7 +18,7 @@ const props = defineProps({
 const { probeType, click } = props
 const emit = defineEmits(['scroll'])
 const wrapper = ref(null)
-onMounted(() => {
+onMounted(() => {  
   const scroll = new BScroll(wrapper.value, {
     probeType,
     click,
